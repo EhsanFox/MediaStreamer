@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Adding favicon -->
+    
+    <link rel="icon" href="./static/favicon.ico" />
+    
+
+    <!-- Adding meta -->
+    
+
+    <!-- Adding external script-->
+    
+
+    <!-- Adding external style-->
+    
+
+    <!-- Adding scripts-->
+    
+
+    <!-- Adding style-->
+    
+
+    <!-- Adding overlay script-->
+    
+
+    <!-- Adding overlay style-->
+    
+
+
+    <title>
+      Streamer.js
+    </title>
+
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/third-party/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/third-party/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/reset.css">
+    <link type="text/css" rel="stylesheet" href="styles/clean-jsdoc-theme-base.css">
+    <link type="text/css" rel="stylesheet" href="styles/clean-jsdoc-theme-dark.css">
+    
+    <svg aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    style="display:none">
+    <defs>
+        <symbol id="copy-icon" viewbox="0 0 488.3 488.3">
+            <g>
+                <path
+                    d="M314.25,85.4h-227c-21.3,0-38.6,17.3-38.6,38.6v325.7c0,21.3,17.3,38.6,38.6,38.6h227c21.3,0,38.6-17.3,38.6-38.6V124    C352.75,102.7,335.45,85.4,314.25,85.4z M325.75,449.6c0,6.4-5.2,11.6-11.6,11.6h-227c-6.4,0-11.6-5.2-11.6-11.6V124    c0-6.4,5.2-11.6,11.6-11.6h227c6.4,0,11.6,5.2,11.6,11.6V449.6z" />
+                <path
+                    d="M401.05,0h-227c-21.3,0-38.6,17.3-38.6,38.6c0,7.5,6,13.5,13.5,13.5s13.5-6,13.5-13.5c0-6.4,5.2-11.6,11.6-11.6h227    c6.4,0,11.6,5.2,11.6,11.6v325.7c0,6.4-5.2,11.6-11.6,11.6c-7.5,0-13.5,6-13.5,13.5s6,13.5,13.5,13.5c21.3,0,38.6-17.3,38.6-38.6    V38.6C439.65,17.3,422.35,0,401.05,0z" />
+            </g>
+        </symbol>
+        <symbol id='search-icon' viewBox="0 0 512 512">
+            <g>
+                <g>
+                    <path
+                        d="M225.474,0C101.151,0,0,101.151,0,225.474c0,124.33,101.151,225.474,225.474,225.474    c124.33,0,225.474-101.144,225.474-225.474C450.948,101.151,349.804,0,225.474,0z M225.474,409.323    c-101.373,0-183.848-82.475-183.848-183.848S124.101,41.626,225.474,41.626s183.848,82.475,183.848,183.848    S326.847,409.323,225.474,409.323z" />
+                </g>
+            </g>
+            <g>
+                <g>
+                    <path
+                        d="M505.902,476.472L386.574,357.144c-8.131-8.131-21.299-8.131-29.43,0c-8.131,8.124-8.131,21.306,0,29.43l119.328,119.328    c4.065,4.065,9.387,6.098,14.715,6.098c5.321,0,10.649-2.033,14.715-6.098C514.033,497.778,514.033,484.596,505.902,476.472z" />
+                </g>
+            </g>
+        </symbol>
+        <symbol id="down-icon" viewBox="0 0 16 16">
+            <path 
+                fill-rule="evenodd" 
+                clip-rule="evenodd" 
+                d="M12.7803 6.21967C13.0732 6.51256 13.0732 6.98744 12.7803 7.28033L8.53033 11.5303C8.23744 11.8232 7.76256 11.8232 7.46967 11.5303L3.21967 7.28033C2.92678 6.98744 2.92678 6.51256 3.21967 6.21967C3.51256 5.92678 3.98744 5.92678 4.28033 6.21967L8 9.93934L11.7197 6.21967C12.0126 5.92678 12.4874 5.92678 12.7803 6.21967Z"
+            >
+            </path>
+        </symbol>
+    </defs>
+</svg>
+  </head>
+
+  <body>
+
+    <nav class="navbar" id="navbar">
+      <div class="navbar-heading" id="navbar-heading"><a href="index.html"><h2 class="navbar-heading-text">MediaStreamer Documents</h2></a></div><div class="search-box" id="search-box"><div class="search-box-input-container"><input class="search-box-input" type="text" placeholder="Search..." id="search-box-input" /><svg class="search-icon" alt="search-icon"><use xlink:href="#search-icon"></use></svg></div><div class="search-item-container" id="search-item-container"><ul class="search-item-ul" id="search-item-ul"></ul></div></div><div class="sidebar-main-content" id="sidebar-main-content"><div class="accordion collapsed" id="8315240" > <h3 class="accordion-heading">Classes<svg><use xlink:href="#down-icon"></use></svg></h3><ul class="accordion-content"><li class="accordion-list" id=""><a href="Base.html">Base</a></li><li class="accordion collapsed child" id=2711448><div class="accordion-heading child"><a href="Streamer.html">Streamer</a><svg><use xlink:href="#down-icon"></use></svg></div><ul class='methods accordion-content'><li data-type='method'><a href="Streamer.html#Start">Start</a></li></ul></li></ul> </div><div class="accordion collapsed" id="2774063" > <h3 class="accordion-heading">Global<svg><use xlink:href="#down-icon"></use></svg></h3><ul class="accordion-content"><li class="accordion-list" id=""><a href="global.html#executePromise">executePromise</a></li><li class="accordion-list" id=""><a href="global.html#StreamerOptions">StreamerOptions</a></li></ul> </div><ul><li class="menu-li"><a href='https://npmjs.com/package/mediastreamer' class=' menu-link' id='' target='_blank'>NPM Package</a></li><li class="menu-li"><a href='https://github.com/EhsanFox/MediaStreamer/packages/1132996' class=' menu-link' id='' target='_blank'>Github Package</a></li><li class="menu-li"><a href='https://ehsan.js.org/' class=' menu-link' id='' target='_blank'>Ehsan's Website</a></li></ul>
+      
+
+    </nav>
+    <div class="navbar-ham" id="navbar-ham">
+      <div>
+        <div class="first"></div>
+        <div class="second"></div>
+        <div class="third"></div>
+      </div>
+    </div>
+
+    <div id="main" class="main-content">
+      
+      <h1 id='page-title' class="page-title">
+        Streamer.js
+      </h1>
+      
+
+      
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import { Base } from "./Base.js";
+import fs from "fs";
+import { executePromise } from "./ExecPromise.js";
+import { EventEmitter } from "stream";
+
+/**
+ * @typedef {object} StreamerOptions
+ * @property {String} StreamerOptions.file Video File to Stream - required
+ * @property {String} StreamerOptions.videoBitrate Bitrate of Video - optional
+ * @property {String} StreamerOptions.audioBitrate Bitrate of Audio - optional
+ * @property {number} StreamerOptions.audioSampleRate Sample rate of Audio - optional
+ * @property {number} StreamerOptions.frameRate Stream Frame Rate - optional
+ * @property {number} StreamerOptions.threads CPU Core numbers allowed for FFMPEG to use for Stream, 0 = ALL - optional
+ * @property {number} StreamerOptions.audioChannels Audio Channels for Stream - optional
+ * @property {number} StreamerOptions.crf Content Rate Factor - optional
+ */
+
+/**
+ * @class
+ * @classdesc Streamer Class
+ */
+ export class Streamer extends Base {
+
+    /**
+     * @type {number}
+     * @description CPU Core numbers allowed for FFMPEG to use for Stream
+     */
+    threads = 0;
+
+    /**
+     * @type {string}
+     * @description Video File to Stream
+     */
+    file;
+
+    /**
+     * @type {string}
+     * @description Video Bitrate
+     */
+    videoBitrate = '4500k';
+
+    /**
+     * @type {String}
+     * @description Audio Bitrate
+     */
+    audioBitrate = '128k';
+
+    /**
+     * @type {number}
+     * @description Audio Sample Rate
+     */
+    audioSampleRate = 44100;
+
+    /**
+     * @description Stream Frame Rate
+     * @type {string}
+     */
+    frameRate = 25;
+
+    /**
+     * @type {number}
+     * @description Audio Channels
+     */
+    audioChannels = 2;
+
+    /**
+     * @type {number}
+     * @description Content Rate Factor, an x264 argument that tries to keep reasonably consistent video quality, while varying bitrate during more 'complicated' scenes, etc. A value of 30 allows somewhat lower quality and bit rate.
+     */
+    contentRateFactor = 28;
+
+    /**
+     * @description Stream output wrapper
+     * @type {string}
+     * @private
+     */
+    #wrapper = 'flv';
+
+    /**
+     * @description Video Codec
+     * @type {string}
+     * @private
+     */
+    #videoCodec = 'libx264';
+
+    /**
+     * @description Audio Codec
+     * @type {string}
+     * @private
+     */
+    #audioCodec = 'aac';
+
+    /**
+     * @description Encoder Speed
+     * @type {string}
+     * @private
+     */
+    #preset = 'medium';
+
+    /**
+     * @type {String}
+     * @description Bundeled Command to be executed on OS
+     * @private
+     */
+    #BundeledCommand = null;
+
+    /**
+     * @param {String} rtmpURL RTMP Url Connection
+     * @param {StreamerOptions} opts Options related to your stream 
+     */
+    constructor(rtmpURL, opts = {})
+    {
+        super(rtmpURL);
+        
+        if('threads' in opts)
+            this.threads = opts.threads;
+        
+        if('file' in opts)
+            if(fs.existsSync(opts.file))
+                this.file = opts.file;
+            else
+                throw new Error(`${opts.file} is not valid.`);
+
+        if('audioChannels' in opts)
+            this.audioChannels = opts.audioChannels;
+
+        if('videoBitrate' in opts)
+            this.videoBitrate = opts.videoBitrate;
+
+        if('audioBitrate' in opts)
+            this.audioBitrate = opts.audioBitrate;
+
+        if('audioSampleRate' in opts)
+            this.audioSampleRate = opts.audioSampleRate;
+
+        if('crf' in opts)
+            this.contentRateFactor = opts.crf;
+
+        if('frameRate' in opts)
+            this.frameRate = opts.frameRate;
+
+        this.#BundeledCommand = this.#Bundle();
+    }
+
+    setFile(path)
+    {
+        if(path &amp;&amp; typeof path == 'string' &amp;&amp; path !== '' &amp;&amp; fs.existsSync(path))
+            this.file = path;
+        else
+            throw new Error(`Invalid input recived as the file path.`);
+    }
+
+    #Bundle()
+    {
+        if(typeof this.audioBitrate !== 'string' || typeof this.videoBitrate !== 'string' || typeof this.audioChannels !== 'number' || typeof this.audioSampleRate !== 'number' || typeof this.contentRateFactor !== 'number' || typeof this.threads !== 'number' || typeof this.frameRate !== 'number')
+            throw new Error(`One of imported values types are not valid.`);
+
+        return `ffmpeg -re -i ${this.file} -pix_fmt yuvj420p -x264-params keyint=48:min-keyint=48:scenecut=-1 -b:v ${this.videoBitrate} -b:a ${this.audioBitrate} -ar ${this.audioSampleRate} -acodec ${this.#audioCodec} -vcodec ${this.#videoCodec} -preset ${this.#preset} -crf ${this.contentRateFactor} -threads ${this.threads} -f ${this.#wrapper} ${this.server}`
+    }
+
+    /**
+     * @description Start Streaming with FFMPEG
+     * @returns {EventEmitter}
+     */
+    Start()
+    {
+        let result = new EventEmitter();
+        executePromise(this.#BundeledCommand)
+        .then(log => result.emit("finish", log))
+        .catch(err => result.emit("error", err))
+    }
+}</code></pre>
+        </article>
+    </section>
+
+
+
+
+    </div>
+
+    <footer class="footer" id="footer">
+      Made with 💖 By Ehsan
+    </footer>
+
+    <script src="scripts/third-party/prettify.js"></script>
+    <script src="scripts/third-party/lang-css.js"></script>
+    <script type="text/javascript" src="scripts/misc.js"></script>
+
+    <script>prettyPrint();</script>
+    <script src="scripts/linenumber.js"></script>
+    <script src="scripts/fix-code-block.js"></script>
+    <script src="scripts/fix-navbar.js"></script>
+    
+      <script src="scripts/search.js"></script>
+      <script src="scripts/third-party/fuse.js"></script>
+      <script>
+        var list = [{"title":"Base","link":"<a href=\"Base.html\">Base</a>"},{"title":"Streamer","link":"<a href=\"Streamer.html\">Streamer</a>"},{"title":"Streamer#Start","link":"<a href=\"Streamer.html#Start\">Streamer &rtrif; Start</a>"},{"title":"executePromise","link":"<a href=\"global.html#executePromise\">executePromise</a>"},{"title":"StreamerOptions","link":"<a href=\"global.html#StreamerOptions\">StreamerOptions</a>"}];
+        var options = 
+          setupSearch(list, options)
+      </script>
+    
+
+    
+
+    
+
+    
+
+    
+
+
+  </body>
+
+</html>
