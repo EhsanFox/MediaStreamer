@@ -1,6 +1,6 @@
 {
   "name": "mediastreamer",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "description": "a module to stream your video to platforms or RTMP Servers",
   "main": "src/index.js",

@@ -22,8 +22,8 @@ export class Base {
      */
     constructor(rtmpURL)
     {
-        if(rtmpURL.split(":")[0].toLowerCase() !== 'rtmp')
-            throw new Error(`Only RTMP Connections are Supported.`);
+        if(rtmpURL.split(":")[0].toLowerCase() !== 'rtmp' || rtmpURL.split(":")[0].toLowerCase() !== 'rtmps')
+            throw new Error(`Only RTMP(s) Connections are Supported.`);
 
         this.#RTMPServer = rtmpURL;
 
