@@ -1,5 +1,5 @@
 {
-  "name": "@ehsanfox/mediastreamer",
+  "name": "mediastreamer",
   "version": "1.0.1",
   "type": "module",
   "description": "a module to stream your video to platforms or RTMP Servers",
@@ -31,9 +31,6 @@
     "clean-jsdoc-theme": "^3.3.1",
     "node-opus": "^0.3.3",
     "opusscript": "0.0.8"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
   },
   "devDependencies": {
     "jsdoc": "^3.6.7"
