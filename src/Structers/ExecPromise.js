@@ -1,4 +1,5 @@
-import { exec } from "child_process"
+import { exec } from "child_process";
+
 /**
  * @param {String} cmd Command to Run and Execute
  * @param {Boolean} isFFmpeg is Command related to FFMPEG?

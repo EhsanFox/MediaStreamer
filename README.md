@@ -20,9 +20,9 @@ From npm:
 - even audio channels of your stream
 
 ## Documents
-Would be up in version 1 of the package
+Documents live at [/mediaStreamer](http://ehsan.js.org/mediastreamer/)
 
 ### Credits
 - Thanks [Hooman](https://github.com/Scrip7) for the specific help and FFMPEG Docs
 
-### [MIT License]()
+### [MIT License](https://github.com/EhsanFox/MediaStreamer/blob/main/LICENSE)

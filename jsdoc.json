@@ -1,0 +1,46 @@
+{
+    "source": 
+    {
+        "include": ["src", "package.json", "README.md", "LICENSE"],
+        "includePattern": ".js$",
+        "excludePattern": "(node_modules/|docs)"
+    },
+
+    "plugins": ["plugins/markdown"],
+
+    "opts": 
+    {
+        "encoding": "utf8",
+        "readme": "./README.md",
+        "destination": "docs/",
+        "recurse": true,
+        "verbose": true,
+        "template": "./node_modules/clean-jsdoc-theme",
+        "theme_opts": 
+        {
+            "theme": "dark",
+            "title": "MediaStreamer Documents",
+            "menu": [
+                {
+                    "title": "NPM Package",
+                    "link": "https://npmjs.com/package/mediastreamer",
+                    "target": "_blank"
+                },
+                {
+                    "title": "Github Package",
+                    "link": "https://github.com/EhsanFox/MediaStreamer/packages/1132996",
+                    "target": "_blank"
+                },
+                {
+                    "title": "Ehsan's Website",
+                    "link": "https://ehsan.js.org/",
+                    "target": "_blank"
+                }
+            ],
+            "sections": ["Classes", "Global", "Menu"],
+            "footer": "Made with 💖 By Ehsan",
+            "static_dir": ["./static"],
+            "favicon": "./static/favicon.ico"
+        }
+    }
+}
