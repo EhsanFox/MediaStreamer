@@ -1,0 +1,34 @@
+{
+  "name": "mediastreamer",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "a module to stream your video to platforms or RTMP Servers",
+  "main": "src/index.js",
+  "keywords": [
+    "stream",
+    "twitch",
+    "youtube",
+    "ffmpeg",
+    "twitch.tv",
+    "live stream",
+    "file stream",
+    "boycode",
+    "ehsan",
+    "exxon",
+    "ehsan.js.org"
+  ],
+  "author": {
+    "email": "ehsan8184@gmail.com",
+    "name": "Ehsan Golmakani",
+    "url": "https://ehsan.js.org"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@discordjs/opus": "^0.7.0",
+    "node-opus": "^0.3.3",
+    "opusscript": "0.0.8"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@ehsanfox"
+  }
+}
