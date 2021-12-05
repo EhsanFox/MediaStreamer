@@ -1,7 +1,7 @@
 import { Base } from "./Base.js";
 import fs from "fs";
 import { executePromise } from "./ExecPromise.js";
-import { EventEmitter } from "stream";
+import { EventEmitter } from "events";
 
 /**
  * @typedef {object} StreamerOptions
