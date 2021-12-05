@@ -27,8 +27,8 @@ jobs:
       - name: Building 🧱
         run: npm run build-docs
 
-      - name: Move Structers
-        run: cp -r ~/docs/@ehsanfox/. ~/docs
+      - name: Move Structers 📋
+        run: cp -r ./docs/@ehsanfox/. ./docs
 
       - name: Deploy to Github-Pages 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.5
