@@ -167,6 +167,7 @@ import { EventEmitter } from "events";
         let result = new EventEmitter();
         executePromise(this.#BundeledCommand)
         .then(log => result.emit("finish", log))
-        .catch(err => result.emit("error", err))
+        .catch(err => result.emit("error", err));
+        return result;
     }
 }
