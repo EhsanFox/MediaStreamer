@@ -155,7 +155,7 @@ import { EventEmitter } from "events";
         if(typeof this.audioBitrate !== 'string' || typeof this.videoBitrate !== 'string' || typeof this.audioChannels !== 'number' || typeof this.audioSampleRate !== 'number' || typeof this.contentRateFactor !== 'number' || typeof this.threads !== 'number' || typeof this.frameRate !== 'number')
             throw new Error(`One of imported values types are not valid.`);
 
-        return `ffmpeg -re -i ${this.file} -pix_fmt yuvj420p -x264-params keyint=48:min-keyint=48:scenecut=-1 -b:v ${this.videoBitrate} -b:a ${this.audioBitrate} -ar ${this.audioSampleRate} -acodec ${this.#audioCodec} -vcodec ${this.#videoCodec} -preset ${this.#preset} -crf ${this.contentRateFactor} -threads ${this.threads} -f ${this.#wrapper} ${this.server}`
+        return `ffmpeg -re -i ${this.file} -pix_fmt yuvj420p -x264-params keyint=48:min-keyint=48:scenecut=-1 -b:v ${this.videoBitrate} -b:a ${this.audioBitrate} -ar ${this.audioSampleRate} -acodec ${this.#audioCodec} -vcodec ${this.#videoCodec} -preset ${this.#preset} -crf ${this.contentRateFactor} -threads ${this.threads} -f ${this.#wrapper} "${this.server}"`
     }
 
     /**
