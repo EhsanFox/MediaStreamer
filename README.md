@@ -23,6 +23,6 @@ From npm:
 Documents live at [/mediaStreamer](http://ehsan.js.org/MediaStreamer/)
 
 ### Credits
-- Thanks [Hooman](https://github.com/Scrip7) for the specific help on the FFMPEG Docs
+- Thanks [Kambiz](https://github.com/Scrip7) for the specific help on the FFMPEG Docs
 
 ### [MIT License](https://github.com/EhsanFox/MediaStreamer/blob/main/LICENSE)
