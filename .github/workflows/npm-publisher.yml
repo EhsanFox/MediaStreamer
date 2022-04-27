@@ -1,17 +1,35 @@
-name: Publish to NPM ✨
+name: 📤 | Publish Package
 
-on: push
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
+      - name: 💥 | Checkout
+        uses: actions/checkout@v1
+
+      - name: 🚀 | Setup Node
+        uses: actions/setup-node@v1
         with:
-          node-version: 10
-      - run: npm install
-      - run: npm test
-      - uses: JS-DevTools/npm-publish@v1
+          node-version: 14
+      
+      - name: 📩 | Install Packages
+        run: npm install
+
+      - name: 🧪 | Lint
+        run: npm run lint
+
+      - name: 💉 | Check
+        run: npm run build:check
+
+      - name: 🏗 | Compile TS
+        run: npm run build
+        
+      - name: 🎉 | Publish Package
+        uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.NPM_TOKEN }}

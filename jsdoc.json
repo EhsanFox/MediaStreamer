@@ -2,11 +2,18 @@
     "source": 
     {
         "include": ["src", "package.json", "README.md", "LICENSE"],
-        "includePattern": ".js$",
+        "includePattern": "\\.(jsx|js|ts|tsx)$",
         "excludePattern": "(node_modules/|docs)"
     },
+    "tags": {
+        "allowUnknownTags": ["optional"]
+    },
 
-    "plugins": ["plugins/markdown"],
+    "plugins": ["plugins/markdown", "node_modules/better-docs/typescript"],
+
+    "typescript": {
+        "moduleRoot": "src"
+    },
 
     "opts": 
     {
@@ -15,7 +22,7 @@
         "destination": "docs/",
         "recurse": true,
         "verbose": true,
-        "template": "./node_modules/clean-jsdoc-theme",
+        "template": "node_modules/clean-jsdoc-theme",
         "theme_opts": 
         {
             "theme": "dark",

@@ -1,3 +1,5 @@
+import { StreamingPlatforms } from "../types";
+
 /**
  * @class
  * @classdesc Base Class for Streamer Class
@@ -7,41 +9,33 @@ export class Base {
     /**
      * RTMP Connection URL
      * @type {String}
-     * @private
+     * @readonly
      */
-    #RTMPServer;
+    readonly RTMPServer: string;
 
     /**
      * @description Detected Platform from RTMP Url
-     * @type {String}
+     * @type {StreamingPlatforms}
+     * @readonly
      */
-    platform;
+    readonly platform: StreamingPlatforms;
 
     /**
      * @param {String} rtmpURL RTMP Connection URL
      */
-    constructor(rtmpURL)
+    constructor(rtmpURL: string)
     {
         if(rtmpURL.split("://")[0].toLowerCase() == 'rtmp' || rtmpURL.split("://")[0].toLowerCase() == 'rtmps')
-            this.#RTMPServer = rtmpURL;
+            this.RTMPServer = rtmpURL;
         else
             throw new Error(`Only RTMP(s) Connections are Supported.`);
-
-        
 
         //Detect platform
         if(rtmpURL.split(".").includes("youtube"))
             this.platform = "youtube";
         else if(rtmpURL.split(".").includes("live-video"))
             this.platform = "twitch";
-    }
-
-    /**
-     * @readonly
-     * @description RTMP URL of Connection
-     */
-    get server()
-    {
-        return this.#RTMPServer;
+        else
+            this.platform = "unknown";
     }
 }
